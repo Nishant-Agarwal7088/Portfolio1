@@ -1,0 +1,537 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+
+}
+body{
+    background-color: rgb(59, 59, 59);
+}
+/* Navbar Section */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.nav-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list {
+  margin: 10px;
+  list-style: none;
+}
+.logo{
+    height: 40px;
+    width:50px;
+    filter: invert(100%);
+}
+a {
+  text-decoration: none;
+}
+#nav-header {
+  background-color: rgb(38, 38, 38);
+}
+
+.slider-button {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider-circle {
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+.moon{
+    display:none;
+}
+.sun{
+    position: absolute;
+    height: 20px;
+   left: 35px;
+    top: 5px;
+    filter: invert(100%);
+}
+.hamburger{
+    display: none;
+}
+.line{
+    height: 2px;
+    width: 15px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 690px;
+}
+#favicon{
+    display: flex;
+    margin: 10px 20px 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+#favicon img{
+    width: 20px;
+    padding: 10px;
+    filter: invert(100%);
+    border: 1px solid black;
+    border-radius: 30%;
+    transition: all 0.3s ;
+}
+#intro{
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#intro h1{
+    font-size: 50px;
+    padding: 20px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(59, 59, 59);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px;
+    transition: all 0.3s ;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
+}
+#favicon img:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
+    filter: invert(0);
+    transform: rotate(360deg);
+}
+
+.container {
+    position: relative;
+}
+
+.jump {
+  width: 80%;
+   
+}
+
+
+/* About Section */
+
+#about{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 100px;
+  height: 600px;
+    
+}
+#about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#about-me h1{
+    font-size: 40px;
+    padding: 20px;
+}
+#about-me p{
+    font-size: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Skills Section */
+#skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 100px;
+    
+  
+}
+
+#skills h1{
+    font-size: 40px;
+    padding: 20px;
+}
+.progress{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 10px;
+    padding: 50px;
+    border: 1px solid rgb(38, 38, 38);
+    background-color: rgb(38, 38, 38);
+    border-radius: 20px;
+}
+.progress-container {
+    width: 100%;
+    max-width: 700px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.progress-bar {
+    width: 0%; 
+    height: 100%;
+    background: linear-gradient(to right, #9fa0ff, #000271);
+    transition: width 1s ease-in-out;
+}
+
+
+.progress-bar.animated1 {
+    width: 80%; 
+}
+.progress-bar.animated2 {
+    width: 90%; 
+}
+.progress-bar.animated3 {
+    width: 85%; 
+}
+.progress-bar.animated4 {
+    width: 60%; 
+}
+.progress-bar.animated5 {
+    width: 80%; 
+}
+
+/* Certificates Section */
+.certificates{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 100px;
+    
+  
+}
+#certificates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  
+}
+#certificates h1{
+    
+    font-size: 40px;
+    padding: 100px 0 0 0;
+}
+.certificates img{
+    width: 50px;
+    height: 50px;
+    filter: invert(100%);
+}
+.certificate{
+    border: 1px solid rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: rgb(38, 38, 38);
+    transition: all 0.3s ease-in-out;
+}
+
+.certificate:hover{
+    transition: all 0.3s ease-in-out;
+ 
+   scale: 1.05;
+   box-shadow: 5px 5px 10px rgb(13, 13, 13);
+   
+}
+
+/* Projects Section*/
+#project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+  
+}
+#project h1{
+    
+    font-size: 40px;
+    padding: 100px 0 0 0;
+}
+
+
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 100px;
+    
+  
+}
+
+.projects img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+   filter:brightness(60%);
+  
+}
+
+
+.project{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  
+}
+.project .overlay{
+    position: absolute;
+   padding: 20px;
+   display: none;
+   transition: all 0.3s ease-in-out;
+   
+    
+   
+}
+.project:hover .overlay{
+    display: block;
+    transition: all 0.3s ease-in-out;
+ 
+    
+   
+   
+  
+}
+.project{
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.project:hover{
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+    box-shadow: 5px 5px 10px rgb(13, 13, 13);
+   
+    
+}
+
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 100px 100px 0 100px;
+    
+  
+}
+#contact h1{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.form-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0 0 0;
+    
+  
+}
+.form-1 input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    color: rgb(255, 255, 255);   
+    transition: all 0.3s ease-in-out;
+}
+.form-1 input:hover{
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+    box-shadow: 5px 5px 10px rgb(13, 13, 13);
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+}
+.form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ 
+    
+  
+}
+.form-2 textarea{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    color: rgb(255, 255, 255);   
+    transition: all 0.3s ease-in-out;
+}
+.form-2 textarea:hover{
+    transition: all 0.3s ease-in-out;
+    scale: 1.05;
+    box-shadow: 5px 5px 10px rgb(13, 13, 13);
+}
+
+textarea::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+    background-color: rgb(38, 38, 38);
+    
+  
+}
+.footer img{
+    width: 20px;
+    padding: 10px;
+    filter: invert(100%);
+    border: 1px solid black;
+    border-radius: 30%;
+    transition: all 0.3s ;
+    margin: 20px;
+}
+.footer img:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(59, 59, 59);
+    filter: invert(0);
+    transform: rotate(360deg);
+    border: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .projects{
+        grid-template-columns: 1fr;
+        padding: 100px 20px;
+    }
+    .form-1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .certificates{
+        grid-template-columns: 1fr;
+        width: auto;
+        padding: 20px;
+    }
+    .progress{
+        width: 300px;
+        padding: 10px;
+    }
+    #about{
+        padding: 0;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    text-area{
+        width: 150px;
+    }
+    .form-2{
+        width: 220px;
+    }
+    .nav-content{
+        display: none;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .progress{
+        width: 300px;
+        padding: 10px;
+    }
+    
+    
+   
+    
+   
+}
+@media (max-width: 1224px) and (min-width: 768px) {
+    .certificates{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .progress{
+        width: 300px;
+        padding: 10px;
+    }
+    #about{
+        padding: 0;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects{
+        grid-template-columns: repeat(2,1fr);
+        padding: 100px 20px;
+    }
+    
+}
