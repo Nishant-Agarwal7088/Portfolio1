@@ -134,8 +134,21 @@ a {
 
 .jump {
   width: 80%;
+  animation: profile 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
    
 }
+
+@keyframes profile {
+  0% {
+    transform:perspective(100px) translateZ(0);
+  }
+  100% {
+    transform: translateZ(-10px);
+  }
+}
+
 
 
 /* About Section */
@@ -499,6 +512,9 @@ textarea::placeholder{
     .hamburger{
         display: block;
     }
+    #about .jump{
+        max-width: 30%;
+    }
 }
 @media (max-width: 480px) {
     .progress{
@@ -533,5 +549,8 @@ textarea::placeholder{
         grid-template-columns: repeat(2,1fr);
         padding: 100px 20px;
     }
-    
+    #about .jump{
+        max-width: 30%;
+    }
+   
 }
